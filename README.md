@@ -1,12 +1,92 @@
-# React + Vite
+# 🌐 Personal React Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive, single-page portfolio site built using **React + Vite**. This project showcases my front-end development skills, design abilities, and a clean development workflow using modern JavaScript tooling.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Live Demo
 
-## Expanding the ESLint configuration
+**🔗 Visit here:** [https://learning-react-app-project.netlify.app](https://learning-react-app-project.netlify.app)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+*(Replace this link with your actual Netlify URL)*
+
+---
+
+## 🧠 Why This Project?
+
+As a passionate front-end developer, I wanted a lightweight yet modern tech stack to build my personal website. This project:
+- Highlights my ability to write clean, modular, responsive components.
+- Demonstrates my understanding of Git, GitHub workflows, and CI/CD with Netlify.
+- Serves as a foundation for adding real-world features like contact forms, dark mode, and backend integrations.
+
+---
+
+## 🔧 Tech Stack
+
+| Tool/Library      | Purpose                              |
+|------------------|--------------------------------------|
+| **React**         | UI library for building components   |
+| **Vite**          | Lightning-fast bundler and dev server|
+| **CSS / Flexbox** | Custom styling and layout            |
+| **Netlify**       | CI/CD & hosting                      |
+| **Git & GitHub**  | Version control and collaboration    |
+
+---
+
+## 📁 Project Structure
+
+vite-first/
+│
+├── public/ # Static assets
+├── src/
+│ ├── components/ # Reusable UI components
+│ ├── assets/ # utilities that the website needs
+│ ├── styles/ # CSS files scoped per section
+│ ├── App.jsx # Main component
+│ └── main.jsx # Entry point
+├── .gitignore
+├── eslint.config.js
+├── index.html
+├── package-lock.json
+├── package.json
+├── README.md
+└── package.json
+
+
+---
+
+## ✨ Features
+
+- ✅ **Fully responsive layout**
+- ✅ **Custom navigation bar with mobile toggle**
+- ✅ **Smooth scrolling experience**
+- ✅ **Clean, modular file structure**
+- ✅ **Live reload with HMR via Vite**
+- ✅ **Deployed using GitHub & Netlify CI**
+
+---
+
+## 🖼️ Screenshots
+
+### 💻 Desktop View
+![Desktop Screenshot](./public/screenshots/desktop.png)
+
+### 📱 Mobile View
+![Mobile Screenshot](./public/screenshots/mobile.png)
+
+---
+
+## 🛠️ Getting Started Locally
+
+To run this project on your machine:
+
+```bash
+# Clone the repository
+git clone https://github.com/your-username/Learning-React-App.git
+cd Learning-React-App
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
