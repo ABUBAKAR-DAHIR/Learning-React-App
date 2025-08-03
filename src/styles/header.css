@@ -118,7 +118,7 @@
             width: 60%;
             height: 100%;
             clip-path: polygon(0 0, 100% 0, 85% 100%, 0 100%);
-            background-color: white;
+            background-color: #fff;
             transition: all 0.3s;
             opacity: 0;
             z-index: -1;
