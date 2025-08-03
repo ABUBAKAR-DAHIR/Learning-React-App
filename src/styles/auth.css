@@ -1,0 +1,62 @@
+.auth{
+    position: relative;
+    right: -26px;
+    padding: 15px;
+    border: 3px solid white;
+    border-radius: 20%;
+    transition: all 0.3s;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.auth::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 60%;
+    height: 100%;
+    clip-path: polygon(0 0, 100% 0, 85% 100%, 0 100%);
+    background-color: black;
+    transition: all 0.3s;
+    opacity: 0;
+    z-index: -1;
+}
+
+.auth:hover::before{
+    left: 0;
+    opacity: 1;
+}
+
+@media (max-width: 725px) {
+    .auth{
+        border: none;
+        padding: 20px;
+        width: 100%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0px;
+        padding-right: 90px;
+    }
+
+    .auth::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 60%;
+        height: 100%;
+        clip-path: polygon(0 0, 100% 0, 85% 100%, 0 100%);
+        background-color: black;
+        transition: all 0.3s;
+        opacity: 0;
+        z-index: -1;
+    }
+
+    .auth:hover::before{
+        left: 0;
+        opacity: 1;
+    }
+}

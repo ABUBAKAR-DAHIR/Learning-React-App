@@ -1,0 +1,138 @@
+.contact{
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+    min-width: 343px;
+}
+
+.contact .contact-form{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact .contact-form h2{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.contact .contact-form form{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact .contact-form form > *{
+    width: 30vw;
+}
+
+.contact .contact-form form input, textarea{
+    padding: 20px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    width: inherit;
+}
+
+.contact .contact-form form button{
+    position: relative;
+    padding: 20px 20px;
+    background-color: rgba(96, 34, 154, 0.8);
+    border: none;
+    width: inherit;
+    margin-top: 10px;
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+
+.contact .contact-form form button::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -100%;
+    width: 50%;
+    height: 100%;
+    clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
+    /* transform: skew(-20deg); */
+    background-color: black;
+    opacity: 0;
+    transform: scaleX(-1);
+    /* start */
+    transition: all 0.4s;
+}
+
+.contact .contact-form form button:hover::before{
+    opacity: 1;
+    left: 0;
+    transform: scaleX(1);
+}
+
+.contact .contact-form form button:hover{
+    padding-left: 60%;
+}
+
+
+.contact .contact-form form textarea{
+    width: inherit;
+    resize: none;
+}
+
+.contact img{
+    width: 500px;
+}
+
+.contact .wrapper{
+    border: 2px solid rgba(96, 34, 154, 0.8);
+    padding: 40px 60px;
+    width: 100%;
+}
+
+hr{
+    /* padding: 50px; */
+    /* padding: 20px; */
+}
+
+@media (max-width: 725px) {
+    .contact{
+        width: 100%;
+        padding: 0px;
+        justify-content: center;
+    }
+    .contact img{
+        display: none;
+        width: 0px;
+    }
+    .contact .contact-form .wrapper form button{
+        font-size: 18px;
+        text-transform: capitalize;
+    }
+
+    .contact .wrapper{
+        width: 100%;
+        padding: 20px;
+    }
+    .contact .contact-form form input, textarea{
+        /* width: 50%; */
+    }
+
+
+}
+
+@media (max-width: 368px) {
+    .contact{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    .contact .contact-form form input, textarea{
+        width: auto;
+    }
+    
+}

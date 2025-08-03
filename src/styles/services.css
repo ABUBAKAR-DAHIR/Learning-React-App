@@ -1,0 +1,61 @@
+.services .about-services{
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.services .about-services h1{
+    margin-bottom: 15px;
+}
+
+
+.services .about-services .actual-services p{
+    position: relative;
+    padding: 20px;
+    border: 3px solid black;
+    border-radius: 4px;
+    width: 30vw;
+    margin-bottom: 20px;
+    font-size: 18px;
+    transition: .2s ease-in-out;
+    overflow: hidden;
+}
+.services .about-services .actual-services p i {
+    position: absolute;
+    left: -20px;
+    /* opacity: 0; */
+    transition: all 0.5s;
+}
+
+.services .about-services .actual-services p:hover{
+    /* padding: 30px; */
+    /* transform: ; */
+    width: 36vw;
+    padding-left: 50px;
+}
+.services .about-services .actual-services p:hover > i{
+    left: 20px;
+    opacity: 1;
+}
+
+@media (max-width: 725px) {
+    .services .about-services .actual-services{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .services .about-services .actual-services p{
+        width: 60%;
+    }
+    .services .about-services .actual-services p:hover{
+    /* padding: 30px; */
+    /* transform: ; */
+    width: 80%;
+    padding-left: 50px;
+}
+
+}
