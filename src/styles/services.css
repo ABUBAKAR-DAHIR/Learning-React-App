@@ -21,6 +21,7 @@
     font-size: 18px;
     transition: .2s ease-in-out;
     overflow: hidden;
+    background-color: white;
 }
 .services .about-services .actual-services p i {
     position: absolute;

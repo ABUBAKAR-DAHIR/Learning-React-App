@@ -72,6 +72,9 @@
             color: white;
             font-size: 25px;
         }
+        .header{
+            border-bottom: 0.1px solid white;
+        }
         .header ul{
             flex-direction: column;
             position: absolute;
@@ -115,7 +118,7 @@
             width: 60%;
             height: 100%;
             clip-path: polygon(0 0, 100% 0, 85% 100%, 0 100%);
-            background-color: black;
+            background-color: white;
             transition: all 0.3s;
             opacity: 0;
             z-index: -1;
@@ -130,10 +133,12 @@
             position: initial;
             display: flex;
             flex-direction: column;
-            width: 100%;
+            width: 120%;
             text-align: center;
             align-items: center;
             justify-content: center;
+            border-bottom: 0.1px solid white;
+            
             /* margin-left: 10px; */
         }
         .auths li{
