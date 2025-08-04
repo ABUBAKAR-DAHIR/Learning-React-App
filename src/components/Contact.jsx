@@ -3,7 +3,7 @@
 
     export default function Contact() {
     return (
-        <div id='contact'>
+        <div id='contact' data-aos="fade-up">
             <hr/>
             <div className='contact'>
                 <div className="contact-form">

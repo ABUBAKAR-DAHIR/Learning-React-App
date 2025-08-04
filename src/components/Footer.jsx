@@ -5,7 +5,7 @@
     return (
         <div id='footer' className='footer'>
             <div className="footer-wrapper">
-                <p>© {new Date().getFullYear} ReactLearn. All rights reserved</p>
+                <p>© {new Date().getFullYear()} ReactLearn. All rights reserved</p>
                 <div className='socials'>
                     <a href=""><i className='fab fa-github'></i></a>
                     <a href=""><i className='fab fa-linkedin'></i></a>

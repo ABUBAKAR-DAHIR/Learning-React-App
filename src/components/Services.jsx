@@ -1,10 +1,14 @@
 import React from 'react'
 import '../styles/services.css'
 import '@fortawesome/fontawesome-free/css/all.min.css';
+import Aos from 'aos';
+import 'aos/dist/aos.css'
+import { useEffect } from 'react';
 
 export default function Services() {
+  
   return (
-    <div id='services' className='services'>
+    <div id='services' className='services' data-aos="fade-up">
         <hr />
         <div className="about-services">
             <h1>Services that we offer</h1>
