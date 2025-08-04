@@ -1,10 +1,14 @@
 .footer{
-    background-color: #2f2e38;
     height: 10vh;
     text-align: center;
-    padding: 20px 10px;
     color: white;
     width: 100%;
+}
+
+.footer .footer-wrapper{
+    padding: 20px 10px;
+    background-color: #2f2e38;
+
 }
 
 .footer .socials{
