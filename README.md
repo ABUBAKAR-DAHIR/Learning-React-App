@@ -41,7 +41,22 @@ It acts as a hands-on notebook for my React learning journey.
 
 ## 📁 Folder Structure
 
-<pre> vite-first/ ├── public/ # Static assets (favicon, etc.) ├── src/ │ ├── assets/ # Images and other media │ ├── components/ # Reusable React components │ ├── styles/ # Custom CSS files │ ├── App.jsx # Main app component │ └── main.jsx # App entry point ├── .gitignore ├── index.html ├── package.json ├── vite.config.js └── README.md </pre>
+```text
+vite-first/
+├── public/               # Static assets (favicon, etc.)
+├── src/
+│   ├── assets/           # Images and other media
+│   ├── components/       # Reusable React components
+│   ├── styles/           # Custom CSS files
+│   ├── App.jsx           # Main component file
+│   └── main.jsx          # Entry point of React app
+├── .gitignore
+├── index.html
+├── package.json
+├── vite.config.js
+└── README.md
+```
+
 
 ---
 
