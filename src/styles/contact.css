@@ -96,9 +96,9 @@
     align-self: center;
 }
 
-hr{
-    /* padding: 50px; */
-    /* padding: 20px; */
+.contact .contact-form form p{
+    align-self: center;
+    /* width: 100%; */
 }
 
 @media (max-width: 1244px) {
