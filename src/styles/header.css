@@ -286,7 +286,10 @@ and (orientation: landscape){
         height: 17vh;
     }
 
+
+
     .header ul{
+        top: 65px;
         /* background-color: blue; */
     }
 }
