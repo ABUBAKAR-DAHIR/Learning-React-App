@@ -28,7 +28,7 @@
     opacity: 1;
 }
 
-@media (max-width: 725px) {
+@media (max-width: 799px) {
     .auth{
         border: none;
         padding: 20px;
@@ -38,7 +38,7 @@
         align-items: center;
         justify-content: center;
         border-radius: 0px;
-        padding-right: 90px;
+        padding-right: 60px;
     }
 
     .auth::before{
@@ -63,7 +63,7 @@
 
 @media only screen
     and (min-width: 800px)
-    and (max-width: 920px)
+    and (max-width: 930px)
     and (orientation: landscape){
     .auth{
         border: none;
@@ -74,7 +74,8 @@
         align-items: center;
         justify-content: center;
         border-radius: 0px;
-        padding-right: 90px;
+        padding-right: 60px;
+        
     }
 
     .auth::before{
