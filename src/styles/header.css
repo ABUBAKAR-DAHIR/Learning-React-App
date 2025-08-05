@@ -5,7 +5,7 @@
 
 html{
     scroll-behavior: smooth;
-    scroll-padding-top: 13vh;
+    /* scroll-padding-top: 13vh; */
 }
 
 .header{
