@@ -55,7 +55,7 @@ export default function Header() {
             <a href="#services" onClick={() => handleNavClick('services')}><li>Services</li></a>
             <a href="#contact" onClick={() => handleNavClick('contact')}><li>Contact</li></a>
             <div className='auths'>
-              <li><Link to='/register' className='li'onClick={() => setMenu(false)}><Auth name="Sign In"/></Link></li>
+              <li><Link to='/register' className='li'onClick={() => setMenu(false)}><Auth name="Sign Up"/></Link></li>
               <li><Link to='/login' className='li'onClick={() => setMenu(false)}><Auth name="Log In"/></Link></li>
             </div>
         </ul>
