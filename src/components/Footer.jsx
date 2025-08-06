@@ -7,7 +7,7 @@
             <div className="footer-wrapper">
                 <p>© {new Date().getFullYear()} ReactLearn. All rights reserved</p>
                 <div className='socials'>
-                    <a href=""><i className='fab fa-github'></i></a>
+                    <a href="https://github.com/ABUBAKAR-DAHIR"><i className='fab fa-github'></i></a>
                     <a href=""><i className='fab fa-linkedin'></i></a>
                     <a href=""><i className='fab fa-x'></i></a>
                 </div>

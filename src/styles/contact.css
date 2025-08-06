@@ -1,6 +1,6 @@
 .contact{
     height: auto;
-    width: 100%;
+    /* width: 100%; */
     /* background-color: rgb(179, 107, 107); */
     display: flex;
     justify-content: space-evenly;
@@ -26,7 +26,7 @@
 }
 
 .contact .contact-form form > *{
-    width: 30vw;
+    /* width: 30vw; */
 }
 
 .contact .contact-form form input, textarea{
@@ -100,6 +100,60 @@
 .contact .contact-form form p{
     align-self: center;
     /* width: 100%; */
+}
+
+/* .info-message{
+    background-color: #03c577;
+    color: white;
+    padding: 10px 20px;
+    opacity: 0;
+}
+
+.info-message.visible{
+    opacity: 1;
+} */
+
+/* .info-wrapper{
+    background-color: blue;
+    max-width: 50%;
+    text-align: center;
+    overflow: auto;
+} */
+ .info-message {
+  text-align: center;
+  background-color: #f3da01;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: 500;
+  color: white;
+  margin: 10px 0;
+  width: 100%;
+  max-width: 90%;
+
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: all 0.4s ease;
+}
+
+/* When visible */
+.info-message.visible {
+  max-height: 100px; /* enough to hold 1-2 lines */
+  opacity: 1;
+  padding: 10px 20px;
+}
+
+/* When hidden */
+.info-message.hide {
+  padding: 0 20px; /* reduce padding too when hiding */
+}
+
+.info-message.error{
+    background-color: red;
+}
+
+.info-message.success{
+    background-color: #03c577;
 }
 
 @media (max-width: 1244px) {
