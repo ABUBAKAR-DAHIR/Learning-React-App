@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router'
 import { loginUser } from '../services/authService'
 
 export default function Login() {
-  const navigate = useNavigate()
+  const navigate = useNavigate()  
 
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
@@ -36,7 +36,7 @@ export default function Login() {
           <a href="">forgot password?</a>
           <button id='login' onClick={(e) => handleLogin(e)}>login</button>
           <p>{info}</p>
-          <button id='back-register' onClick={() => navigate('/register')}>sign up</button>
+          <button id='back-register' onClick={() => navigate('/register')}>Don't have an account? sign up</button>
         </form>
       </div>
     </div>

@@ -1,5 +1,6 @@
 .login-holder{
     height: 88vh;
+    min-height: 682px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -54,18 +55,27 @@
     border-radius: 8px;
     border: none;
     width: 50%;
-    margin-top: 15px;
+    margin-top: 25px;
     text-transform: uppercase;
 }
 
 .login-holder form #back-register{
     text-transform: capitalize;
+    width: 100%;
+    /*  -color: red; */
+    /* display: flex; */
+    /* align-self: baseline;
+    text-align: center;
+    align-items: center;
+    justify-content: center; */
+    /* height: 30%; */
+
     position: absolute;
-    top: 90%;
-    background-color: transparent;
+    top: 88%;
+    /* background-color: transparent; */
     border: none;
-    font-size: 20px;
-    color: #6d6d70;
+    font-size: 16px;
+    color: gray;
 }
 
 
