@@ -49,7 +49,7 @@ export default function SignIn() {
           <input type="password" name="password" id="repeat-password" placeholder='Repeat Password' value={repeatPassword} onChange={(e) => setRepeatedPassword(e.target.value)}/>
           <button id='register' type='button' onClick={handleRegister}>register</button>
           <p>{info}</p>
-          <button id='back-login' type='button' onClick={(e) => backLoginClick(e)}>sign in</button>
+          <button id='back-login' type='button' onClick={(e) => backLoginClick(e)}>Already have an account? sign in</button>
         </form>
       </div>
     </div>
