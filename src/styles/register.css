@@ -1,5 +1,5 @@
 .register-holder{
-    height: 88vh;
+    height: 90vh;
     width: 100%;
     min-height: 645px;
     display: flex;
@@ -49,6 +49,7 @@
 }
 
 .register-holder form #register{
+    position: relative;
     padding: 20px;
     background-color: purple;
     color: white;
@@ -57,6 +58,36 @@
     width: 50%;
     margin-top: 15px;
     text-transform: uppercase;
+    z-index: 99;
+    overflow: hidden;
+    transition: ease-in-out 0.3s;
+}
+.register-holder form #register::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -100%;
+    width: 50%;
+    height: 100%;
+    clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
+    /* transform: skew(-20deg); */
+    background-color: black;
+    opacity: 0;
+    transform: scaleX(-1);
+    /* start */
+    transition: ease-in-out 0.4s;
+    z-index: -1;
+}
+
+.register-holder form #register:hover::before{
+    opacity: 1;
+    left: 0;
+    transform: scaleX(1);
+}
+
+.register-holder form #register:hover{
+    /* padding-left: 60%; */
 }
 
 .register-holder form #back-login{
@@ -67,6 +98,73 @@
     border: none;
     font-size: 16px;
     color: #6d6d70;
+}
+
+.register-holder .google{
+    background-color: red;
+    margin-top: 10px;
+    border: 2px solid black;
+    border-radius: 3px;
+}
+
+.gsi-material-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  background-color: white;
+  border: 1px solid #dadce0;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  color: #3c4043;
+    margin-top: 20px;
+
+}
+
+.gsi-material-button:hover {
+  background-color: #f7f8f8;
+}
+
+.gsi-material-button-icon svg {
+  width: 18px;
+  height: 18px;
+}
+
+.gsi-material-button-content-wrapper{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+}
+
+.register-holder form #register::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -100%;
+    width: 50%;
+    height: 100%;
+    clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
+    /* transform: skew(-20deg); */
+    background-color: black;
+    opacity: 0;
+    transform: scaleX(-1);
+    /* start */
+    transition: ease-in-out 0.4s;
+    z-index: -1;
+}
+
+.register-holder form #register:hover::before{
+    opacity: 1;
+    left: 0;
+    transform: scaleX(1);
+}
+
+.register-holder form #register:hover{
+    /* padding-left: 60%; */
 }
 
 @media (max-width: 555px) {

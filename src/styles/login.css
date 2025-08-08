@@ -49,6 +49,7 @@
 }
 
 .login-holder form #login{
+    position: relative;
     padding: 20px;
     background-color: purple;
     color: white;
@@ -57,6 +58,36 @@
     width: 50%;
     margin-top: 25px;
     text-transform: uppercase;
+    transition: all 0.3s;
+    overflow: hidden;
+    z-index: 99;
+}
+.login-holder form #login::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -100%;
+    width: 50%;
+    height: 100%;
+    clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
+    /* transform: skew(-20deg); */
+    background-color: black;
+    opacity: 0;
+    transform: scaleX(-1);
+    /* start */
+    transition: ease-in-out 0.4s;
+    z-index: -1;
+}
+
+.login-holder form #login:hover::before{
+    opacity: 1;
+    left: 0;
+    transform: scaleX(1);
+}
+
+.login-holder form #login:hover{
+    /* padding-left: 60%; */
 }
 
 .login-holder form #back-register{
@@ -71,13 +102,44 @@
     /* height: 30%; */
 
     position: absolute;
-    top: 88%;
+    top: 90%;
     /* background-color: transparent; */
     border: none;
     font-size: 16px;
     color: gray;
 }
 
+.gsi-login-material-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  background-color: white;
+  border: 1px solid #dadce0;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  color: #3c4043;
+  margin-top: 40px;
+
+}
+
+.gsi-login-material-button:hover {
+  background-color: #f7f8f8;
+}
+
+.gsi-login-material-button-icon svg {
+  width: 18px;
+  height: 18px;
+}
+
+.gsi-login-material-button-content-wrapper{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+}
 
 @media (max-width: 555px) {
     .login-holder form{
