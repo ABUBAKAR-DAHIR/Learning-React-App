@@ -58,7 +58,7 @@
     width: 50%;
     margin-top: 25px;
     text-transform: uppercase;
-    transition: all 0.3s;
+    transition: all 0.4s;
     overflow: hidden;
     z-index: 99;
 }
